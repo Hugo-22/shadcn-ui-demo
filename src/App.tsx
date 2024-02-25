@@ -98,24 +98,25 @@ const FRAMEWORKS = [
 function App() {
 
 	return <>
-		<div className="h-screen flex items-center justify-center">
-			{/*<div className="w-96">*/}
-			{/*	<MultiSelect*/}
-			{/*		maxSelected={3}*/}
-			{/*		onChange={(items) => console.log(items)}*/}
-			{/*		items={FRAMEWORKS}*/}
-			{/*	/>*/}
-			{/*</div>*/}
+		<div className="h-screen flex justify-center">
+			<div className="flex flex-col justify-evenly">
+				<div className="w-96">
+					<MultiSelect
+						maxSelected={3}
+						onChange={(items) => console.log(items)}
+						items={FRAMEWORKS}
+					/>
+				</div>
 
-			{/*<div className="w-96">*/}
-			{/*	<MultiSelectFilter*/}
-			{/*		onChange={(items) => console.log(items)}*/}
-			{/*		options={LEVELS}*/}
-			{/*		title={'Level'}*/}
-			{/*	/>*/}
-			{/*</div>*/}
-			{/*<TabsLogin/>*/}
-			<MentionTabs />
+				<div className="w-96">
+					<MultiSelectFilter
+						onChange={(items) => console.log(items)}
+						options={LEVELS}
+						title={'Level'}
+					/>
+				</div>
+				<MentionTabs />
+			</div>
 		</div>
 	</>
 }

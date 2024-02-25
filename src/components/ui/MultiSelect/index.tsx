@@ -120,14 +120,14 @@ const MultiSelect = React.memo(({
 					/>
 				</div>
 			</div>
-			{maxSelected && <div className="flex justify-end">
+			{maxSelected && <div className="flex justify-end p-1">
                 <span className="text-sm text-gray-500">{selectedItems.length}/{maxSelected}</span>
             </div>}
 
 			<div className="relative mt-2">
 				{open && selectables.length > 0 && (
 					<div
-						className="absolute w-full z-10 top-0 rounded-md border bg-popover text-popover-foreground shadow-md outline-none animate-in">
+						className="absolute w-full z-10 -top-7 rounded-md border bg-popover text-popover-foreground shadow-md outline-none animate-in">
 						<CommandGroup className="h-full overflow-auto">
 							{selectables.map((item) => (
 								<CommandItem
