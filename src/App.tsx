@@ -1,6 +1,7 @@
 import { TabsLogin } from "@/components/examples/TabsLogin.tsx";
 import { MultiSelect } from "@/components/ui/MultiSelect";
 import { MultiSelectFilter } from "@/components/ui/MultiSelectFilter";
+import { MentionTabs } from "@/components/MentionFeature/MentionTabs.tsx";
 
 
 type option = {
@@ -106,14 +107,15 @@ function App() {
 			{/*	/>*/}
 			{/*</div>*/}
 
-			<div className="w-96">
-				<MultiSelectFilter
-					onChange={(items) => console.log(items)}
-					options={LEVELS}
-					title={'Level'}
-				/>
-			</div>
+			{/*<div className="w-96">*/}
+			{/*	<MultiSelectFilter*/}
+			{/*		onChange={(items) => console.log(items)}*/}
+			{/*		options={LEVELS}*/}
+			{/*		title={'Level'}*/}
+			{/*	/>*/}
+			{/*</div>*/}
 			{/*<TabsLogin/>*/}
+			<MentionTabs />
 		</div>
 	</>
 }
